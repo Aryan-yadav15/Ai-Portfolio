@@ -19,9 +19,9 @@ const SolutionPage = () => {
                     <div className="rounded-lg bg-gradient-to-t from-transparent to-white/10">
                         <div className="flex flex-col">
                             <div className=" flex flex-row  ">
-                                <div className="pl-5 pr-10 pt-5 pb-10 w-[50%]">
+                                <div className="pl-5 pr-10 pt-5 pb-10 w-[50%] xlg:p-20">
                                     <div className=" flex-1  flex flex-col gap-10">
-                                        <div>
+                                        <div className=''>
                                             <img src="/i1.png" alt="" width={70} height={70} />
                                         </div>
                                         <section className='flex gap-4 flex-col'>
@@ -46,7 +46,7 @@ const SolutionPage = () => {
                     <div className="rounded-lg bg-gradient-to-t from-transparent to-white/10">
                         <div className="flex flex-col">
                             <div className=" flex flex-row  ">
-                                <div className="pl-5 pr-10 pt-5 pb-10 w-[50%]">
+                                <div className="pl-5 pr-10 pt-5 pb-10 w-[50%] xlg:p-20">
                                     <div className=" flex-1  flex flex-col gap-10">
                                         <div>
                                             <img src="/i2.png" alt="" width={70} height={70} />

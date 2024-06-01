@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='px-16 py-5  bg-customDarkGray text-white font-Poppins inset-0 -z-10 h-full w-full  bg-[linear-gradient(to_right,#1a1919_1px,transparent_1px),linear-gradient(to_bottom,#1a1919_1px,transparent_1px)] bg-[size:6rem_4rem]'>
+    <div className=' bg-customDarkGray text-white font-Poppins inset-0 -z-10 h-full w-full  bg-[linear-gradient(to_right,#1a1919_1px,transparent_1px),linear-gradient(to_bottom,#1a1919_1px,transparent_1px)] bg-[size:6rem_4rem]'>
       {/* <AboutScrollProvider> 
         <Layout />
       </AboutScrollProvider> */}

@@ -1,4 +1,5 @@
 import React from 'react'
+import "./navbar.css"
 
 const Navbar = () => {
   const handleAboutClick = () => {
@@ -17,16 +18,16 @@ const Navbar = () => {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
   };
   return (
-    <nav className="fixed top-5 left-0 w-full z-50 ">
-      <div className="container mx-auto flex justify-center items-center px-10 py-1">
-        <ul className="flex flex-row rounded-lg gap-10 text-lg px-10 bg-transparent backdrop-blur-md backdrop-filter border-[1px] border-gray-500">
-          <li className="text-white p-2 hover:bg-gray-700">
+    <nav class="fixed top-6 left-0 w-full z-50 ">
+      <div class="container mx-auto flex justify-center items-center px-10 py-1">
+        <ul class="flex flex-row rounded-lg gap-10 text-lg px-10 transition duration-300 ease-in-out hover:bg-white hover:text-black backdrop-blur-md backdrop-filter border-[1px] border-gray-500">
+          <li class="p-2 hover:bg-transparent hover:text-gray-500 hover:text-xl transition duration-100">
             <a href="#" onClick={handleAboutClick}>About</a>
           </li>
-          <li className="text-white p-2 hover:bg-gray-700">
+          <li class="p-2 hover:bg-transparent hover:text-gray-500 hover:text-xl transition duration-100">
             <a href="#" onClick={handleContactClick}>Contact</a>
           </li>
-          <li className="text-white p-2 hover:bg-gray-700">
+          <li class="p-2 hover:bg-transparent hover:text-gray-500 hover:text-xl transition duration-100">
             <a href="#" onClick={handleProjectsClick}>Projects</a>
           </li>
         </ul>

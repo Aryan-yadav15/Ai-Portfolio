@@ -4,13 +4,9 @@ import { InfiniteMovingCards } from './ui/InfiniteMovingCards.jsx'
 
 const Homepage = () => {
 
-  const clients = [...new Array(10)].map((client, index) => ({
-    href: `/${index + 1}.png`
-  }))
-
   return (
     <div className=''>
-      <section id="upper">
+      <section id="upper" className='h-full'>
         <div className="w-full p-1 flex flex-row justify-between">
           <div>
             <h1 className='text-4xl font-Montserrat font-bold  '>Hwllo</h1>
@@ -27,12 +23,6 @@ const Homepage = () => {
           <Herosections />
         </section>
       </section>
-      <InfiniteMovingCards
-        className="mb-20 "
-        items={clients}
-        direction='right'
-        speed='slow'
-      />
     </div>
   )
 }
