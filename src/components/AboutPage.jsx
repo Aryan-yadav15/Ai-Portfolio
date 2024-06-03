@@ -56,7 +56,7 @@ const AboutPage = () => {
         },
     ];
     return (
-        <div className="mb-10">
+        <div className="mb-10 flex flex-col  ">
             <div className="px-4 lg:px-12 text-center flex justify-center">
                 <div className='w-[80%]'>
                     <h1 className="text-5xl font-normal bg-gradient-custom bg-clip-text text-transparent lg:leading-relaxed">
@@ -68,7 +68,7 @@ const AboutPage = () => {
                     <p className="pt-4 text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nihil .</p>
                 </div>
             </div>
-            <div className="flex flex-col ">
+            <div className="flex flex-col gap-5">
                 <section>
                     <div className="  p-5">
                         <div className="flex flex-row bg-gray-200 rounded-lg xlg:pl-40 xlg:items-center ">
@@ -175,7 +175,7 @@ const AboutPage = () => {
                 </section>
             </div>
             <InfiniteMovingCards
-                className="mb-40 mt-20 "
+                className="mb-10 mt-20 "
                 items={clients}
                 direction='right'
                 speed='slow'

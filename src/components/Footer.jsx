@@ -5,9 +5,9 @@ const Footer = () => {
         <>
             <footer>
                 <div className="flex flex-row gap-5">
-                    <div className="flex flex-col flex-2">
+                    <div className="flex flex-col justify-center items-center flex-2 bg-gray-200 rounded-t-3xl ">
                         <section className='flex flex-col'>
-                            <div className="bg-gray-200 rounded-t-3xl pb-10">
+                            <div className="pb-10 ">
                                 <div className='flex flex-col gap-7 justify-center items-center pt-20 p-10 text-gray-900 text-center'>
                                     <h1 className=' text-8xl font-Montserrat font-semibold'>Contact us?</h1>
                                     <div className="flex  ">
@@ -26,7 +26,32 @@ const Footer = () => {
                             </div>
 
                         </section>
-                        <section></section>
+                        <section className='flex flex-col gap-4 border-t-2 border-gray-300 w-[150vh]'>
+                            <div className="flex flex-row px-10 pt-5">
+                                <h1 className=' text-3xl text-gray-500  font-medium flex-1'>Our Info</h1>
+                                <h1 className=' text-3xl text-gray-500  font-medium flex-1'>Our Page</h1>
+                                <h1 className=' text-3xl text-gray-500  font-medium flex-1'>Security</h1>
+                            </div>
+                            <div className="">
+                                <div className="px-10 flex flex-row justify-center items-center text-gray-500 ">
+                                    <div className="flex-1 flex flex-col gap-5">
+                                        <p class="text-black font-medium text-start" >  abcde@gmail.com</p>
+                                        <p class="text-black font-medium text-start" >  +1999929993</p>
+                                        <p class="text-black font-medium text-start" >  1234 Street Name, City Name, United States</p>
+                                    </div>
+                                    <div className="flex-1 flex flex-col gap-5">
+                                        <p class="text-black font-medium text-start" >  About</p>
+                                        <p class="text-black font-medium text-start" >  Homepage</p>
+                                        <p class="text-black font-medium text-start" >  Services</p>
+                                    </div>
+                                    <div className=" flex-1 flex flex-col gap-5">
+                                        <p class="text-black font-medium text-start" >  abcde@gmail.com</p>
+                                        <p class="text-black font-medium text-start" >  +1999929993</p>
+                                        <p class="text-black font-medium text-start" >  1234 Street Name, City Name, United States</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                     <div>
                         <div className="h-full flex-1  w-full flex flex-col bg-gray-200 rounded-tl-3xl">
@@ -38,37 +63,49 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="p-2">
-                                <div className="border-t-2 border-gray-300">
-                                    <div className="flex flex-row justify-center pt-4">
-                                        <p className='text-2xl text-gray-500'>Our Socials</p>
-                                    </div>
-                                    <div>
-                                        <ul className="flex flex-row justify-center gap-4 pt-5">  
-                                            <li className="mr-4">
-                                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                                                    <img src="/github.png" alt="" width={30} height={30} />
-                                                </a>
-                                            </li>
-                                            <li className="mr-4">
-                                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                                                    <img src="/instagram.png" alt="" width={30} height={30} />
-                                                </a>
-                                            </li>
-                                            <li className="mr-4">
-                                                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-                                                <img src="/linkedin.png" alt="" width={30} height={30}/>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                                                    <img src="/twitter.png" alt="" width={30} height={30} />
-                                                </a>
-                                            </li>
-                                        </ul>
+                            <section className='flex flex-col '>
+                                <div className="p-2">
+                                    <div className="border-t-2 border-gray-300">
+                                        <div className="flex flex-row justify-center pt-4">
+                                            <p className='text-2xl text-gray-500'>Our Socials</p>
+                                        </div>
+                                        <div>
+                                            <ul className="flex flex-row justify-center gap-4 pt-5">
+                                                <li className="mr-4">
+                                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                                        <img src="/github.png" alt="" width={30} height={30} />
+                                                    </a>
+                                                </li>
+                                                <li className="mr-4">
+                                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                                        <img src="/instagram.png" alt="" width={30} height={30} />
+                                                    </a>
+                                                </li>
+                                                <li className="mr-4">
+                                                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                                                        <img src="/linkedin.png" alt="" width={30} height={30} />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                                                        <img src="/twitter.png" alt="" width={30} height={30} />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div className="pt-10">
+                                    <div className="flex flex-col gap-2 justify-center items-center">
+                                        <h1 className='text-2xl text-gray-500 font-light text-center'>Our Office</h1>
+                                        <div>
+                                            <p class="text-black font-semibold text-center w-[200px]" >  1234 Street Name, City Name, United States
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </section>
                         </div>
                     </div>
                 </div>
