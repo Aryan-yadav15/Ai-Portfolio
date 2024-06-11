@@ -50,8 +50,8 @@ const SolutionPage = () => {
                                     </div>
                                 </div>
                                 <div className="flex-1 p-10 bg-gray-600">
-                                    <div class="bg-red-50 h-[100%] rounded-lg overflow-hidden">
-                                        <img src="/p5.png" alt="" class="w-full h-full object-cover" />
+                                    <div className="bg-red-50 h-[100%] rounded-lg overflow-hidden">
+                                        <img src="/p5.png" alt="" className="w-full h-full object-cover" />
                                     </div>
                                 </div>
                             </div>
@@ -92,8 +92,8 @@ const SolutionPage = () => {
                                     </div>
                                 </div>
                                 <div className="flex-1 p-10 bg-gray-600">
-                                    <div class="bg-red-50 h-[100%] rounded-lg overflow-hidden">
-                                        <img src="/p2.png" alt="" class="w-full h-full object-cover" />
+                                    <div className="bg-red-50 h-[100%] rounded-lg overflow-hidden">
+                                        <img src="/p2.png" alt="" className="w-full h-full object-cover" />
                                     </div>
                                 </div>
                             </div>

@@ -17,10 +17,10 @@ const Overview = () => {
         <div className="flex flex-col ">
           <div className="flex flex-col lg:flex-row border-b-2 border-gray-600">
             <div className="flex-1 border-2 border-gray-600 border-y-0">
-              <div class="flex justify-center items-center w-full h-full">
-                <div class="rounded-full bg-gradient-to-r from-purple-500 to-gray-50 w-60 h-60 overflow-hidden flex justify-center items-center">
-                  <div class="rounded-full bg-white w-56 h-56 overflow-hidden">
-                    <img src="./p2.png" alt="" class="object-cover object-center w-full h-full" />
+              <div className="flex justify-center items-center w-full h-full">
+                <div className="rounded-full bg-gradient-to-r from-purple-500 to-gray-50 w-60 h-60 overflow-hidden flex justify-center items-center">
+                  <div className="rounded-full bg-white w-56 h-56 overflow-hidden">
+                    <img src="./p2.png" alt="" className="object-cover object-center w-full h-full" />
                   </div>
                 </div>
               </div>
@@ -29,7 +29,7 @@ const Overview = () => {
               <div className="w-[15%] flex justify-center  items-center pr-10">
                 <h1 className='text-center transform rotate-[-90deg] text-8xl'>ZORA</h1>
               </div>
-              <div class="w-[85%] text-justify">
+              <div className="w-[85%] text-justify">
                 <p className='leading-6 flex gap-2 flex-col'>
                   <span>
                     ○
@@ -67,10 +67,10 @@ const Overview = () => {
           </div>
           <div className="flex flex-col lg:flex-row">
             <div className="flex-1 border-2 border-gray-600 border-y-0">
-              <div class="flex justify-center items-center w-full h-full">
-                <div class="rounded-full bg-gradient-to-r from-orange-500 to-gray-50 w-60 h-60 overflow-hidden flex justify-center items-center">
-                  <div class="rounded-full bg-white w-56 h-56 overflow-hidden">
-                    <img src="./p2.png" alt="" class="object-cover object-center w-full h-full" />
+              <div className="flex justify-center items-center w-full h-full">
+                <div className="rounded-full bg-gradient-to-r from-orange-500 to-gray-50 w-60 h-60 overflow-hidden flex justify-center items-center">
+                  <div className="rounded-full bg-white w-56 h-56 overflow-hidden">
+                    <img src="./p2.png" alt="" className="object-cover object-center w-full h-full" />
                   </div>
                 </div>
               </div>
@@ -79,7 +79,7 @@ const Overview = () => {
               <div className="w-[15%] flex justify-center  items-center pr-10">
                 <h1 className='text-center transform rotate-[-90deg] text-8xl'>ZOSS</h1>
               </div>
-              <div class="w-[85%] text-justify">
+              <div className="w-[85%] text-justify">
                 <p className='leading-6 flex gap-2 flex-col'>
                   <span>
                     ○

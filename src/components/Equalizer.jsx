@@ -4,7 +4,7 @@ import Bar from "./Bar";
 
 function Equalizer() {
   const [bars, setBars] = useState([]);
-  const numBars = 60; // Adjust the number of bars
+  const numBars = 100; // Adjust the number of bars
 
   // Create initial bars with random heights
   useEffect(() => {
