@@ -30,7 +30,7 @@ const Founders = () => {
                             </div>
                         </section>
                         <section className='py-6 flex gap-3 flex-col w-[600px]'>
-                            <h1 classname="text-6xl font-semibold capitalize bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-300">Prashant S B</h1>
+                            <h1 className="text-5xl font-semibold capitalize bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-300">Prashant S B</h1>
                             <p className='text-xl font-light '>Founder & CEO</p>
                             <p className='flex flex-col gap-4'>
                                 <span>
