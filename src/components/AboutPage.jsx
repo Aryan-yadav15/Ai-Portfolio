@@ -83,7 +83,7 @@ const AboutPage = () => {
                             <div className="text-gray-800 flex-2 flex flex-col px-10 py-5 xlg:flex-1">
                                 <section>
                                     <div className='w-28 xlg:w-48'>
-                                        <h1 className='text-4xl font-Montserrat font-bold xlg:text-7xl  '>Hwllo</h1>
+                                        <h1 className='text-4xl font-Montserrat font-bold xlg:text-7xl  '>ZOORA</h1>
                                         <div className='h-[5px]  bg-emerald-600'></div>
                                     </div>
                                 </section>

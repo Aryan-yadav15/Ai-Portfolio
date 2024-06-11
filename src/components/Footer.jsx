@@ -58,7 +58,7 @@ const Footer = () => {
                             <div className=" rounded-t-2xl">
                                 <div className="flex flex-col gap-10 justify-center items-center pt-20 p-10 text-gray-900 text-center">
                                     <div className=''>
-                                        <h1 className='text-6xl font-Montserrat font-bold xlg:text-7xl  '>Hwllo</h1>
+                                        <h1 className='text-6xl font-Montserrat font-bold xlg:text-7xl  '>ZOORA</h1>
                                         <div className='h-[5px]  bg-emerald-600'></div>
                                     </div>
                                 </div>
