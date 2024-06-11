@@ -26,7 +26,7 @@ const Footer = () => {
                             </div>
 
                         </section>
-                        <section className='flex flex-col gap-4 border-t-2 border-gray-300 w-[150vh]'>
+                        <section className='flex flex-col gap-4 border-t-2 border-gray-300 w-[150vh] pb-20'>
                             <div className="flex flex-row px-10 pt-5">
                                 <h1 className=' text-3xl text-gray-500  font-medium flex-1'>Our Info</h1>
                                 <h1 className=' text-3xl text-gray-500  font-medium flex-1'>Our Page</h1>
@@ -35,19 +35,19 @@ const Footer = () => {
                             <div className="">
                                 <div className="px-10 flex flex-row justify-center items-center text-gray-500 ">
                                     <div className="flex-1 flex flex-col gap-5">
-                                        <p class="text-black font-medium text-start" >  abcde@gmail.com</p>
-                                        <p class="text-black font-medium text-start" >  +1999929993</p>
-                                        <p class="text-black font-medium text-start" >  1234 Street Name, City Name, United States</p>
+                                        <p className="text-black font-medium text-start" >  abcde@gmail.com</p>
+                                        <p className="text-black font-medium text-start" >  +1999929993</p>
+                                        <p className="text-black font-medium text-start" >  1234 Street Name, City Name, United States</p>
                                     </div>
                                     <div className="flex-1 flex flex-col gap-5">
-                                        <p class="text-black font-medium text-start" >  About</p>
-                                        <p class="text-black font-medium text-start" >  Homepage</p>
-                                        <p class="text-black font-medium text-start" >  Services</p>
+                                        <p className="text-black font-medium text-start" >  About</p>
+                                        <p className="text-black font-medium text-start" >  Homepage</p>
+                                        <p className="text-black font-medium text-start" >  Services</p>
                                     </div>
                                     <div className=" flex-1 flex flex-col gap-5">
-                                        <p class="text-black font-medium text-start" >  abcde@gmail.com</p>
-                                        <p class="text-black font-medium text-start" >  +1999929993</p>
-                                        <p class="text-black font-medium text-start" >  1234 Street Name, City Name, United States</p>
+                                        <p className="text-black font-medium text-start" >  abcde@gmail.com</p>
+                                        <p className="text-black font-medium text-start" >  +1999929993</p>
+                                        <p className="text-black font-medium text-start" >  1234 Street Name, City Name, United States</p>
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@ const Footer = () => {
                                     <div className="flex flex-col gap-2 justify-center items-center">
                                         <h1 className='text-2xl text-gray-500 font-light text-center'>Our Office</h1>
                                         <div>
-                                            <p class="text-black font-semibold text-center w-[200px]" >  1234 Street Name, City Name, United States
+                                            <p className="text-black font-semibold text-center w-[200px]" >  1234 Street Name, City Name, United States
                                             </p>
                                         </div>
                                     </div>

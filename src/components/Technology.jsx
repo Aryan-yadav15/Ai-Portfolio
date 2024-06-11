@@ -25,18 +25,19 @@ const Technology = () => {
                                                 <div className="flex flex-col">
                                                     <div className=" flex flex-row  ">
                                                         <div className="pl-5 pr-10 pt-5 pb-10 xlg:px-20">
-                                                            <div className="  flex flex-col gap-10 items-center justify-center text-center">
+                                                            <div className="  flex flex-col gap-10 items-center  text-center h-[500px]">
                                                                 <div className=''>
-                                                                    <img src="/satellite-dish1.png" alt="" width={70} height={70} className='' />
+                                                                    <img src="/satellite-dish1.png" alt="" width={90} height={90} className='' />
                                                                 </div>
                                                                 <section className='flex gap-4 flex-col'>
                                                                     <h2>
-                                                                        <span className='text-5xl bg-gradient-custom bg-clip-text text-transparent '>Mission and Vision </span>
+                                                                        <span className='text-5xl bg-gradient-custom bg-clip-text text-transparent '>Security </span>
                                                                     </h2>
                                                                     <p className='text-xl'> ZebiOps SmartHome Solution</p>
                                                                 </section>
                                                                 <section>
-                                                                    <p className='text-gray-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero similique natus obcaecati eius incidunt maxime iste perspiciatis distinctio? Nam ab et blanditiis eos </p>
+                                                                    <p className='text-gray-300'>Both ZORA and ZOSS are built with a strong focus on security. Data encryption, secure access controls, and regular security updates ensure that user information is protected from unauthorized access and cyber threats.
+                                                                    </p>
                                                                 </section>
                                                             </div>
                                                         </div>
@@ -56,7 +57,7 @@ const Technology = () => {
                                                 <div className="flex flex-col">
                                                     <div className=" flex flex-row  ">
                                                         <div className="pl-5 pr-10 pt-5 pb-10  xlg:px-20">
-                                                            <div className="  flex flex-col gap-10 items-center text-center">
+                                                            <div className="  flex flex-col gap-10 items-center text-center h-[500px]">
                                                                 <div>
                                                                     <img src="/connection1.png" alt="" width={70} height={70} />
                                                                 </div>
@@ -67,7 +68,8 @@ const Technology = () => {
                                                                     <p className='text-xl'> ZebiOps SmartHome Solution</p>
                                                                 </section>
                                                                 <section>
-                                                                    <p className='text-gray-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero similique natus obcaecati eius incidunt maxime iste perspiciatis distinctio? Nam ab et blanditiis eos </p>
+                                                                    <p className='text-gray-300'>ZORA and ZOSS leverage the latest advancements in artificial intelligence and machine learning to deliver personalized and efficient services. By learning user preferences and behaviour patterns, these systems provide tailored responses and anticipate user needs.
+                                                                    </p>
                                                                 </section>
                                                             </div>
                                                         </div>
@@ -82,23 +84,24 @@ const Technology = () => {
                             <div className="flex-1">
                                 <div className="w-[100%]  xlg:px-1">
                                     <div className=" p-5 xlg:px5">
-                                        <div className="border-[1px] border-gray-700 rounded-lg">
+                                        <div className="border-[1px] border-gray-700 rounded-lg ">
                                             <div className="rounded-lg bg-gradient-to-t from-transparent to-white/10">
                                                 <div className="flex flex-col">
                                                     <div className=" flex flex-row  ">
                                                         <div className="pl-5 pr-10 pt-5 pb-10  xlg:px-20">
-                                                            <div className="  flex flex-col gap-10 items-center text-center">
+                                                            <div className="  flex flex-col gap-10 items-center text-center h-[500px]">
                                                                 <div>
                                                                     <img src="/fingerprint.png" alt="" width={70} height={70} />
                                                                 </div>
                                                                 <section className='flex gap-4 flex-col'>
                                                                     <h2>
-                                                                        <span className='text-5xl bg-gradient-custom bg-clip-text text-transparent '>Mission and Vision </span>
+                                                                        <span className='text-5xl bg-gradient-custom bg-clip-text text-transparent '>Privacy </span>
                                                                     </h2>
                                                                     <p className='text-xl'> ZebiOps SmartHome Solution</p>
                                                                 </section>
                                                                 <section>
-                                                                    <p className='text-gray-300'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero similique natus obcaecati eius incidunt maxime iste perspiciatis distinctio? Nam ab et blanditiis eos </p>
+                                                                    <p className='text-gray-300'>User privacy is a top priority for ZebiOps Technology. ZORA and ZOSS adhere to strict privacy policies, ensuring that personal data is handled with the utmost care. Users have full control over their data, including options for anonymization and the ability to manage data-sharing preferences.
+                                                                    </p>
                                                                 </section>
                                                             </div>
                                                         </div>

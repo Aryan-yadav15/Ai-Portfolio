@@ -6,6 +6,7 @@ const Homepage = () => {
 
   return (
     <div className=''>
+      
       <section id="upper" className='h-full'>
         <div className="w-full p-1 flex flex-row justify-between">
           <div>

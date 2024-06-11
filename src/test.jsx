@@ -1,9 +1,11 @@
 import React from "react";
 import { ContainerScroll } from "./components/ui/3dCard.jsx";
+import Equalizer from "./components/Equalizer.jsx";
 
 export function HeroScrollDemo() {
     return (
-        <div className="flex flex-col overflow-hidden">
+        <div className="flex flex-col overflow-hidden relative">
+            <Equalizer/>
             <ContainerScroll
                 titleComponent={
                     <>

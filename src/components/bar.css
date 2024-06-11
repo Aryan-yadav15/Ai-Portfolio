@@ -1,0 +1,17 @@
+.equalizer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: transparent;
+}
+
+.bar {
+  width: 3px; /* Adjust bar width */
+  margin-right: 15px; /* Adjust bar spacing */
+  background-color: rgb(207, 110, 207); /* Adjust bar color */
+  transition: height 0.2s ease-in-out; /* Smooth height transition */
+  filter: blur(2.5px); /* Add blur effect */
+  
+}
+

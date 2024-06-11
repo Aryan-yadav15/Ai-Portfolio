@@ -72,10 +72,10 @@ const AboutPage = () => {
                 <section>
                     <div className="  p-5">
                         <div className="flex flex-row bg-gray-200 rounded-lg xlg:pl-40 xlg:items-center ">
-                            <div class="flex-1 p-10">
-                                <div class="aspect-square relative">
+                            <div className="flex-1 p-10">
+                                <div className="aspect-square relative">
                                     <div className=" xlg:h-[80%] lg:h-[90%]">
-                                        <img src="./p5.png" alt="" class="object-cover w-full h-[110%] rounded-lg shadow-lg shadow-gray-600 " />
+                                        <img src="./p5.png" alt="" className="object-cover w-full h-[110%] rounded-lg shadow-lg shadow-gray-600 " />
                                     </div>
                                 </div>
                             </div>
