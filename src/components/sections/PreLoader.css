@@ -1,0 +1,29 @@
+.preloader {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  
+  .preloader svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .preloader svg path {
+    stroke: #333; /* Adjust color as needed */
+    stroke-dasharray: 100% 100%;
+    stroke-dashoffset: 100%;
+    animation: draw 2s ease-in-out infinite;
+  }
+  
+  @keyframes draw {
+    from {
+      stroke-dashoffset: 100%;
+    }
+    to {
+      stroke-dashoffset: 0%;
+    }
+  }
+  
