@@ -21,14 +21,14 @@ const Preloader = () => {
     // </div>
     <div className="bg-customDarkGray min-h-screen min-w-full overflow-hidden">
       <div className="flex justify-center items-center h-screen overflow-hidden">
-        <motion.div 
+        <motion.div
           initial={{ scale: 0 }}
-          animate={{ scale: [0,1,0], transition: { duration: 4, ease: "easeInOut" } }}
-        className='flex flex-row w-full absolute justify-center items-center bg-transparent overflow-hidden  '>
+          animate={{ scale: [0, 1, 0], transition: { duration: 4, ease: "easeInOut" } }}
+          className='flex flex-row w-full absolute justify-center items-center bg-transparent overflow-hidden  '>
           <motion.span
             initial={{ y: 110 }}
             animate={{ y: [110, 0, 110] }}
-            transition={{ duration: 3, delay: 0.1 , ease:backInOut}}
+            transition={{ duration: 3, delay: 0.1, ease: backInOut }}
             className="text-gray-500 z-10 text-9xl font-bold  bg-gradient-custom bg-clip-text text-transparent lg:leading-normal"
           >
             Z
@@ -36,7 +36,7 @@ const Preloader = () => {
           <motion.span
             initial={{ y: 110 }}
             animate={{ y: [110, 0, 110] }}
-            transition={{ duration: 3, delay: 0.2 , ease:backInOut}}
+            transition={{ duration: 3, delay: 0.2, ease: backInOut }}
             className="text-gray-500 z-10 text-9xl font-bold  bg-gradient-custom bg-clip-text text-transparent lg:leading-normal"
           >
             O
@@ -44,7 +44,7 @@ const Preloader = () => {
           <motion.span
             initial={{ y: 110 }}
             animate={{ y: [110, 0, 110] }}
-            transition={{ duration: 3, delay: 0.3 , ease:backInOut}}
+            transition={{ duration: 3, delay: 0.3, ease: backInOut }}
             className="text-gray-500 z-10 text-9xl font-bold bg-gradient-custom bg-clip-text text-transparent lg:leading-normal "
           >
             R
@@ -52,25 +52,31 @@ const Preloader = () => {
           <motion.span
             initial={{ y: 110 }}
             animate={{ y: [110, 0, 110] }}
-            transition={{ duration: 3, delay: 0.4 , ease:backInOut}}
+            transition={{ duration: 3, delay: 0.4, ease: backInOut }}
             className="text-gray-500 z-10 text-9xl font-bold bg-gradient-custom bg-clip-text text-transparent lg:leading-normal "
           >
             A
           </motion.span>
         </motion.div>
-        <div className="flex flex-row items-center w-full z-0">
-          <motion.div
-            initial={{ y: 0 }}
-            animate={{ y: ["100%", "0%", "100%"] }}
-            transition={{
-              yoyo: Infinity,
-              duration: 2.5,
-              delay: 2.5,
-              ease: "easeInOut"
+        <div className="flex flex-row items-center relative w-full z-0">
+
+        <motion.div
+            initial={{
+              y: 0
             }}
-            end={{ y: 0 }}
-            className="flex-1 h-screen bg-white z-0"
-          ></motion.div>
+            animate={{
+              y: ["100%", "0%", "100%"],
+              transition: {
+                yoyo: Infinity,
+                duration: 2.5,
+                delay: 2.5,
+                ease: "easeInOut"
+              }
+            }}
+            end={{
+              y: 0
+            }}
+            className="flex-1 h-screen bg-white z-0  "></motion.div>
           <motion.div
             initial={{
               y: 0
@@ -125,7 +131,7 @@ const Preloader = () => {
 
         </div>
       </div>
-      
+
 
 
     </div >

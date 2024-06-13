@@ -36,7 +36,7 @@ const Technology = () => {
                                                                     <p className='text-xl'> ZebiOps SmartHome Solution</p>
                                                                 </section>
                                                                 <section>
-                                                                    <p className='text-gray-300'>Both ZORA and ZOSS are built with a strong focus on security. Data encryption, secure access controls, and regular security updates ensure that user information is protected from unauthorized access and cyber threats.
+                                                                    <p className='text-gray-300 lg:mt-[-25px]'>Both ZORA and ZOSS are built with a strong focus on security. Data encryption, secure access controls, and regular security updates ensure that user information is protected from unauthorized access and cyber threats.
                                                                     </p>
                                                                 </section>
                                                             </div>
@@ -68,7 +68,7 @@ const Technology = () => {
                                                                     <p className='text-xl'> ZebiOps SmartHome Solution</p>
                                                                 </section>
                                                                 <section>
-                                                                    <p className='text-gray-300'>ZORA and ZOSS leverage the latest advancements in artificial intelligence and machine learning to deliver personalized and efficient services. By learning user preferences and behaviour patterns, these systems provide tailored responses and anticipate user needs.
+                                                                    <p className='text-gray-300 lg:mt-[-25px]'>ZORA and ZOSS leverage the latest advancements in artificial intelligence and machine learning to deliver personalized and efficient services. By learning user preferences and behaviour patterns, these systems provide tailored responses and anticipate user needs.
                                                                     </p>
                                                                 </section>
                                                             </div>
@@ -100,7 +100,7 @@ const Technology = () => {
                                                                     <p className='text-xl'> ZebiOps SmartHome Solution</p>
                                                                 </section>
                                                                 <section>
-                                                                    <p className='text-gray-300'>User privacy is a top priority for ZebiOps Technology. ZORA and ZOSS adhere to strict privacy policies, ensuring that personal data is handled with the utmost care. Users have full control over their data, including options for anonymization and the ability to manage data-sharing preferences.
+                                                                    <p className='text-gray-300 lg:mt-[-25px]'>User privacy is a top priority for ZebiOps Technology. ZORA and ZOSS adhere to strict privacy policies, ensuring that personal data is handled with the utmost care. Users have full control over their data, including options for anonymization and the ability to manage data-sharing preferences.
                                                                     </p>
                                                                 </section>
                                                             </div>

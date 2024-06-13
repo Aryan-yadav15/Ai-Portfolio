@@ -14,6 +14,7 @@ import { useEffect, useState } from "react"
 import { backInOut, easeOut, motion } from 'framer-motion';
 
 
+
 const Layout = () => {
     const [loading, setLoading] = useState(true);
 
@@ -36,13 +37,13 @@ const Layout = () => {
                         animate={{ opacity: 1 }}
                         transition={{
                             duration: 1,
-                            
+
                         }}>
                         <Navbar />
                         <div className="px-16 xlg:px-48 py-5 sm:flex sm:flex-col">
                             <Homepage />
-                            {/* <Equalizer /> */}
                             <AboutPage />
+                            {/* <Equalizer /> */}
                             <SolutionPage />
                             <Overview />
                             <Technology />
@@ -50,6 +51,7 @@ const Layout = () => {
                             <Testimonial />
                         </div>
                         <Footer />
+                        
                     </motion.div>
 
                 </>

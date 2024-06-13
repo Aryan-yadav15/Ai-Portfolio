@@ -48,7 +48,7 @@ export default {
       },
     },
   },
-  plugins: [
+  plugins: [ [addVariablesForColors],
     function ({ addUtilities }) {
       addUtilities({
         '.bg-clip-text': {

@@ -10,11 +10,11 @@ export function HeroScrollDemo() {
                 titleComponent={
                     <>
                         <div className="px-4 lg:px-12 text-center">
-                            <h1 className="xlg:text-7xl lg:text-6xl font-normal bg-gradient-custom bg-clip-text text-transparent lg:leading-normal">
+                            <h1 className="xlg:text-7xl lg:text-6xl font-normal bg-gradient-custom bg-clip-text text-transparent lg:leading-normal xlg:leading-no">
                                 The
-                                <span className="bg-gradient-to-r from-purple-500/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4 border-purple-700 rounded-none focus:outline-none ml-3">Fastest </span>
+                                <span className="bg-gradient-to-r from-purple-500/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4  border-purple-700 rounded-none focus:outline-none ml-3">Fastest </span>
                                 way to write copy for your
-                                <span className="bg-gradient-to-r from-orange-500/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4 border-orange-700 rounded-none focus:outline-none ml-3">Website </span>
+                                <span className="bg-gradient-to-r from-orange-500/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4  border-orange-700 rounded-none focus:outline-none ml-3">Website </span>
                             </h1>
                         </div>
                         <div className=" text-lg text-gray-300 text-center">
