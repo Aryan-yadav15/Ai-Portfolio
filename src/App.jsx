@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Layout from './layout/Layout'
-import { BackgroundBeams } from './components/ui/BackgroundBeams'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +13,7 @@ function App() {
         <Layout />
       </AboutScrollProvider> */}
       <Layout />
-      <BackgroundBeams />
+      
     </div>
   );
 }

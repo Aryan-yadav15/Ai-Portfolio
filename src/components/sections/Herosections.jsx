@@ -6,7 +6,7 @@ const Herosections = () => {
     return (
         <>
             <div className=''>
-                <div className=" w-full mt-[-80px] mb-20 flex flex-col justify-center items-center gap-5 relative">
+                <div className=" w-full sm:mt-10 lg:mt-[-80px] mb-20 flex flex-col justify-center items-center gap-5 relative">
                     
                     {/* <div className='z-50'>
                         <div className="px-4 lg:px-12 text-center">

@@ -40,7 +40,7 @@ const Layout = () => {
 
                         }}>
                         <Navbar />
-                        <div className="px-16 xlg:px-48 py-5 sm:flex sm:flex-col">
+                        <div className="px-10 lg:px-16 xlg:px-48 py-5 sm:flex sm:flex-col">
                             <Homepage />
                             <AboutPage />
                             {/* <Equalizer /> */}
