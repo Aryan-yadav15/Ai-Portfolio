@@ -1,23 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from './sections/Modal';
 
 const Footer = () => {
+
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const handleViewMoreClick = (e) => {
+        e.preventDefault();
+        setModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setModalOpen(false);
+    };
+
+
     return (
         <>
             <footer>
-                <div className="flex flex-row gap-5">
+                <div className="flex flex-col lg:flex-row lg:gap-5">
                     <div className="flex flex-col justify-center items-center flex-2 bg-gray-200 rounded-t-3xl ">
                         <section className='flex flex-col'>
                             <div className="pb-10 ">
                                 <div className='flex flex-col gap-7 justify-center items-center pt-20 p-10 text-gray-900 text-center'>
-                                    <h1 className=' text-8xl font-Montserrat font-semibold'>Contact us?</h1>
+                                    <h1 className=' text-6xl lg:text-8xl font-Montserrat font-semibold'>Contact us?</h1>
                                     <div className="flex  ">
-                                        <p className='text-3xl'> We'd love to hear from you!</p>
+                                        <p className='text-2xl lg:text-3xl'> We'd love to hear from you!</p>
                                     </div>
                                 </div>
                                 <div className='flex justify-center items-center'>
                                     <div className='w-full flex items-center justify-center'>
                                         <form action="" className=''>
-                                            <input type="text" placeholder='Enter your email' className='rounded-l-lg p-3 border-1 border-gray-700' style={{ width: "600px" }} />
+                                            <input type="text" placeholder='Enter your email' className='rounded-l-lg p-3 border-1 border-gray-700' />
                                             <input type="submit" value='Subscribe' className='bg-gray-800 text-white p-3 rounded-r-lg' />
                                         </form>
                                     </div>
@@ -26,35 +40,42 @@ const Footer = () => {
                             </div>
 
                         </section>
-                        <section className='flex flex-col gap-4 border-t-2 border-gray-300 w-[150vh] pb-20'>
-                            <div className="flex flex-row px-10 pt-5">
-                                <h1 className=' text-3xl text-gray-500  font-medium flex-1'>Our Info</h1>
-                                <h1 className=' text-3xl text-gray-500  font-medium flex-1'>Our Page</h1>
-                                <h1 className=' text-3xl text-gray-500  font-medium flex-1'>Security</h1>
-                            </div>
-                            <div className="">
-                                <div className="px-10 flex flex-row justify-center items-center text-gray-500 ">
-                                    <div className="flex-1 flex flex-col gap-5">
-                                        <p className="text-black font-medium text-start" >  abcde@gmail.com</p>
-                                        <p className="text-black font-medium text-start" >  +1999929993</p>
-                                        <p className="text-black font-medium text-start" >  1234 Street Name, City Name, United States</p>
+                        <section className="container mx-auto px-4 lg:px-10 py-8 lg:py-16 bg-gray-100 rounded-lg shadow-md">
+                            <h2 className="text-3xl text-center text-gray-800 font-medium mb-8">What We Offer</h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div className="flex flex-col gap-4 items-center justify-center border border-gray-300 rounded-lg p-4 hover:shadow-lg">
+                                    <i className="fas fa-info-circle text-4xl text-blue-500"></i>
+                                    <h3 className="text-xl text-gray-800 font-medium mt-2">Our Info</h3>
+                                    <div className="text-gray-600 text-base">
+                                        <div className="flex flex-col gap-4">
+                                            <p className="text-lg lg:text-xl font-medium">About</p>
+                                            <p className="text-lg lg:text-xl font-medium">Homepage</p>
+                                            <p className="text-lg lg:text-xl font-medium">Services</p>
+                                        </div>
                                     </div>
-                                    <div className="flex-1 flex flex-col gap-5">
-                                        <p className="text-black font-medium text-start" >  About</p>
-                                        <p className="text-black font-medium text-start" >  Homepage</p>
-                                        <p className="text-black font-medium text-start" >  Services</p>
+                                </div>
+                                <div className="flex flex-col gap-4 items-center justify-center border border-gray-300 rounded-lg p-4 hover:shadow-lg">
+                                    <i className="fas fa-book-open text-4xl text-green-500"></i>
+                                    <h3 className="text-xl text-gray-800 font-medium mt-2">Our Page</h3>
+                                    <div className="text-gray-600 text-base">
+                                        <div className="flex flex-col gap-4">
+                                            <p className="text-lg lg:text-xl font-medium">abcde@gmail.com</p>
+                                            <p className="text-lg lg:text-xl font-medium">+1999929993</p>
+                                            <p className="text-lg lg:text-xl font-medium">1234 Street Name, City Name, United States</p>
+                                        </div>
                                     </div>
-                                    <div className=" flex-1 flex flex-col gap-5">
-                                        <p className="text-black font-medium text-start" >  abcde@gmail.com</p>
-                                        <p className="text-black font-medium text-start" >  +1999929993</p>
-                                        <p className="text-black font-medium text-start" >  1234 Street Name, City Name, United States</p>
-                                    </div>
+                                </div>
+                                <div className="flex flex-col gap-4 items-center justify-center border border-gray-300 rounded-lg p-4 hover:shadow-lg">
+                                    <i className="fas fa-book-open text-4xl text-green-500"></i>
+                                    <h3 className="text-xl text-gray-800 font-medium mt-2">Our Page</h3>
+                                    <p className="text-gray-600 text-base">Learn more about us and our mission.</p>
                                 </div>
                             </div>
                         </section>
+
                     </div>
                     <div>
-                        <div className="h-full flex-1  w-full flex flex-col bg-gray-200 rounded-tl-3xl">
+                        <div className="h-full flex-1  w-full flex flex-col bg-gray-200 lg:rounded-tl-3xl">
                             <div className=" rounded-t-2xl">
                                 <div className="flex flex-col gap-10 justify-center items-center pt-20 p-10 text-gray-900 text-center">
                                     <div className=''>
@@ -105,6 +126,21 @@ const Footer = () => {
                                     </div>
                                 </div>
 
+                            </section>
+                            <section>
+                                <div className="w-full flex flex-col justify-center items-center xlg:mt-20">
+                                    <p className='text-xl text-gray-600'>
+                                        Terms and Conditions
+
+                                    </p>
+                                    <a href="#" onClick={handleViewMoreClick} className='text-sm underline text-gray-400'>View More</a>
+                                </div>
+
+                                {/* Modal */}
+                                <Modal
+                                    isOpen={isModalOpen}
+                                    onClose={handleCloseModal}
+                                />
                             </section>
                         </div>
                     </div>

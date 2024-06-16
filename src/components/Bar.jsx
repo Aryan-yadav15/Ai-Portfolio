@@ -4,7 +4,7 @@ import "./bar.css";
 function Bar({ height }) {
   return (
     <div
-      className="bar z-1 rounded-full"
+      className="bar rounded-full"
       style={{
         height: `${height}%`, // Set the height as a percentage
       }}
