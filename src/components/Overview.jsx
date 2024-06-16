@@ -1,4 +1,7 @@
-import React from 'react';
+import { useScroll, useTransform } from 'framer-motion';
+import React, { useRef } from 'react'
+import { motion } from "framer-motion"
+
 
 const ProductCard = ({ imageSrc, title, features }) => (
   <div className="flex flex-col lg:flex-row border-b-2 border-gray-600">
@@ -54,7 +57,16 @@ const Overview = () => {
     { title: 'Data Insights', description: 'Provides valuable analytics on energy usage.' }
   ];
 
+  const ref = useRef(null); // Create a ref using useRef
+
+  const { scrollYProgress } = useScroll({
+    target: ref, // Access the DOM element using ref.current
+    offset: ["0 1.5", "0.5 1"],
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1])
+
   return (
+
     <div className="p-5 lg:p-10">
       <div className="pt-10 text-center">
         <h1 className="text-4xl sm:text-5xl font-normal bg-gradient-custom bg-clip-text text-transparent lg:leading-relaxed">
@@ -64,20 +76,36 @@ const Overview = () => {
           <span className="bg-gradient-to-r from-purple-500/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4 border-purple-700 rounded-none focus:outline-none ml-3">Products</span>
         </h1>
       </div>
-      <div className="flex flex-col gap-5 mt-10">
-        <ProductCard
-          imageSrc="./p2.png"
-          title="ZORA"
-          features={zoraFeatures}
-        />
-        <ProductCard
-          imageSrc="./p2.png"
-          title="ZOSS"
-          features={zossFeatures}
-        />
+      <div className="flex flex-col ">
+        <motion.div
+          ref={ref}
+          style={{
+            scale: scaleProgress,
+            opacity: scaleProgress
+          }}>
+
+          <ProductCard
+            imageSrc="./p2.png"
+            title="ZORA"
+            features={zoraFeatures}
+          />
+        </motion.div>
+        <motion.div
+          ref={ref}
+          style={{
+            scale: scaleProgress,
+            opacity: scaleProgress
+          }}>
+          <ProductCard
+            imageSrc="./p2.png"
+            title="ZOSS"
+            features={zossFeatures}
+          />
+        </motion.div>
+
       </div>
     </div>
-  );
+  )
 };
 
 export default Overview;

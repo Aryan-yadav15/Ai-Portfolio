@@ -1,7 +1,17 @@
-import React from 'react';
+import { useScroll, useTransform } from 'framer-motion';
+import React, { useRef } from 'react'
+import { motion } from "framer-motion"
 
 const Technology = () => {
+    const ref = useRef(null); // Create a ref using useRef
+
+    const { scrollYProgress } = useScroll({
+        target: ref, // Access the DOM element using ref.current
+        offset: ["0 1.5", "0.8 1"],
+    });
+    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1])
     return (
+
         <div className='py-20'>
             <div className="px-4 lg:px-12 text-center flex flex-col justify-center">
                 <div className='pb-20'>
@@ -42,9 +52,9 @@ const Technology = () => {
                     }
                 ].map((item, index) => (
                     <div key={index} className="flex-1">
-                        <div className="p-5 xlg:px-1">
-                            <div className="border-[1px] border-gray-700 rounded-lg bg-gradient-to-t from-transparent to-white/10">
-                                <div className="flex flex-col items-center text-center h lg:h-[500px] p-5 xlg:px-20">
+                        <div className="p-5 xlg:px-1 h-full">
+                            <div className="border-[1px] border-gray-700 rounded-lg bg-gradient-to-t from-transparent to-white/10 h-full flex flex-col justify-between">
+                                <div className="flex flex-col items-center text-center p-5 xlg:px-20">
                                     <img src={item.imgSrc} alt="" width={item.imgWidth} height={item.imgHeight} />
                                     <h2 className="text-5xl bg-gradient-custom bg-clip-text text-transparent mt-5">{item.title}</h2>
                                     <p className='text-xl mt-2'>{item.description}</p>
@@ -56,6 +66,8 @@ const Technology = () => {
                 ))}
             </section>
         </div>
+
+
     );
 }
 
