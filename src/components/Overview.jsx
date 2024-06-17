@@ -4,8 +4,8 @@ import { motion } from "framer-motion"
 
 
 const ProductCard = ({ imageSrc, title, features }) => (
-  <div className="flex flex-col lg:flex-row border-b-2 border-gray-600">
-    <div className="flex-1 lg:border-2 border-gray-600 border-y-0">
+  <div className="flex flex-col lg:flex-row border-b-[1px] border-gray-600 mt-10 lg:mt-0">
+    <div className="flex-1 lg:border-[2px] border-gray-900 border-y-0">
       <div className="flex justify-center items-center w-full h-full">
         <div className={`rounded-full ${title === 'ZORA' ? 'bg-gradient-to-r from-purple-500 to-gray-50' : 'bg-gradient-to-r from-orange-500 to-gray-50'} w-40 h-40 md:w-60 md:h-60 overflow-hidden flex justify-center items-center`}>
           <div className="rounded-full bg-white w-36 h-36 md:w-56 md:h-56 overflow-hidden">
@@ -14,7 +14,7 @@ const ProductCard = ({ imageSrc, title, features }) => (
         </div>
       </div>
     </div>
-    <div className="flex-2 flex-col lg:flex-row lg:border-2 border-gray-600 flex border-y-0 border-l-0 py-5 lg:py-10 lg:px-10">
+    <div className="flex-2 flex-col lg:flex-row lg:border-[2px] border-gray-900 flex border-y-0 border-l-0 py-5 lg:py-10 lg:px-10">
       <div className="lg:w-[15%] p-2 lg:p-0 flex w-[100%] justify-center items-center lg:pr-10">
         <h1 className="text-center lg:transform lg:rotate-[-90deg] text-6xl lg:text-8xl">{title}</h1>
       </div>
@@ -61,18 +61,18 @@ const Overview = () => {
 
   const { scrollYProgress } = useScroll({
     target: ref, // Access the DOM element using ref.current
-    offset: ["0 1.5", "0.5 1"],
+    offset: ["0 1.5", "0.2 1"],
   });
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1])
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1])
 
   return (
 
     <div className="p-5 lg:p-10">
       <div className="pt-10 text-center">
-        <h1 className="text-4xl sm:text-5xl font-normal bg-gradient-custom bg-clip-text text-transparent lg:leading-relaxed">
+        <h1 className="text-4xl sm:text-5xl font-normal bg-gradient-custom bg-clip-text text-transparent leading-relaxed lg:leading-relaxed">
           A Deep
           <span className="bg-gradient-to-r from-sky-400/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4 border-sky-700 rounded-none focus:outline-none ml-3">Dive</span>
-          into our
+          in our
           <span className="bg-gradient-to-r from-purple-500/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4 border-purple-700 rounded-none focus:outline-none ml-3">Products</span>
         </h1>
       </div>

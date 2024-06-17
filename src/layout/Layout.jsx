@@ -46,7 +46,9 @@ const Layout = () => {
                         />
                         <div className="px-10 lg:px-16 xlg:px-48 py-5 sm:flex sm:flex-col">
                             <div ref={homepageRef}>
-                                <Homepage />
+                                <Homepage
+                                    contactRef={contactRef}
+                                />
                             </div>
                             <div ref={aboutRef}>
                                 <AboutPage />
@@ -66,7 +68,11 @@ const Layout = () => {
                             <Testimonial />
                         </div>
                         <div ref={contactRef}>
-                            <Footer />
+                            <Footer
+                                aboutRef={aboutRef}
+                                contactRef={contactRef}
+                                projectsRef={projectsRef}
+                            />
                         </div>
                     </motion.div>
                 </>

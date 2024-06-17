@@ -113,6 +113,7 @@ const SolutionPage = () => {
                 </motion.div>
         </div>
 
+
     )
 }
 

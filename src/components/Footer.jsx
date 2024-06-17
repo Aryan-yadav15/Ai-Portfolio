@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Modal from './sections/Modal';
+import emailjs from '@emailjs/browser';
 
-const Footer = () => {
+const Footer = ({ aboutRef, contactRef, projectsRef }) => {
 
     const [isModalOpen, setModalOpen] = useState(false);
 
@@ -14,6 +15,37 @@ const Footer = () => {
         setModalOpen(false);
     };
 
+    const form = useRef();
+    const [formData, setFormData] = useState({
+        name: '',
+        number: '',
+        email: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_uid66jz', 'template_431qapa', form.current, 'uXWBgZT1nRdMB3EwV')
+            .then(
+                (result) => {
+                    console.log('SUCCESS!', result.text);
+                    alert('Email sent successfully!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    alert('Failed to send email.');
+                }
+            );
+    };
 
     return (
         <>
@@ -28,15 +60,6 @@ const Footer = () => {
                                         <p className='text-2xl lg:text-3xl'> We'd love to hear from you!</p>
                                     </div>
                                 </div>
-                                <div className='flex justify-center items-center'>
-                                    <div className='w-full flex items-center justify-center'>
-                                        <form action="" className=''>
-                                            <input type="text" placeholder='Enter your email' className='rounded-l-lg p-3 border-1 border-gray-700' />
-                                            <input type="submit" value='Subscribe' className='bg-gray-800 text-white p-3 rounded-r-lg' />
-                                        </form>
-                                    </div>
-                                </div>
-
                             </div>
 
                         </section>
@@ -46,14 +69,21 @@ const Footer = () => {
                                 <div className="flex flex-col gap-4 items-center justify-center border border-gray-300 rounded-lg p-4 hover:shadow-lg">
                                     <i className="fas fa-info-circle text-4xl text-blue-500"></i>
                                     <h3 className="text-xl text-gray-800 font-medium mt-2">Our Info</h3>
-                                    <div className="text-gray-600 text-base">
+                                    <div className="text-gray-600 text-base w-full">
                                         <div className="flex flex-col gap-4">
-                                            <p className="text-lg lg:text-xl font-medium">About</p>
-                                            <p className="text-lg lg:text-xl font-medium">Homepage</p>
-                                            <p className="text-lg lg:text-xl font-medium">Services</p>
+                                            <p className="text-lg lg:text-xl font-medium">
+                                                <a href="#" onClick={() => handleScroll(aboutRef)}>About</a>
+                                            </p>
+                                            <p className="text-lg lg:text-xl font-medium">
+                                                <a href="#" onClick={() => handleScroll(contactRef)}>Contact</a>
+                                            </p>
+                                            <p className="text-lg lg:text-xl font-medium">
+                                                <a href="#" onClick={() => handleScroll(projectsRef)}>Solution</a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div className="flex flex-col gap-4 items-center justify-center border border-gray-300 rounded-lg p-4 hover:shadow-lg">
                                     <i className="fas fa-book-open text-4xl text-green-500"></i>
                                     <h3 className="text-xl text-gray-800 font-medium mt-2">Our Page</h3>
@@ -69,6 +99,41 @@ const Footer = () => {
                                     <i className="fas fa-book-open text-4xl text-green-500"></i>
                                     <h3 className="text-xl text-gray-800 font-medium mt-2">Our Page</h3>
                                     <p className="text-gray-600 text-base">Learn more about us and our mission.</p>
+
+                                    <div className="w-full flex items-center justify-center mt-4">
+                                        <form ref={form} onSubmit={sendEmail} className="w-full max-w-md flex flex-col gap-4">
+                                            <input
+                                                type="text"
+                                                name="name"
+                                                placeholder="Enter your name"
+                                                value={formData.name}
+                                                onChange={handleChange}
+                                                className="rounded-lg p-3 border text-customDarkGray border-gray-300 focus:border-gray-500 focus:outline-none"
+                                            />
+                                            <input
+                                                type="tel"
+                                                name="number"
+                                                placeholder="Enter your number"
+                                                value={formData.number}
+                                                onChange={handleChange}
+                                                className="rounded-lg p-3 border text-customDarkGray border-gray-300 focus:border-gray-500 focus:outline-none"
+                                            />
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                placeholder="Enter your email"
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                                className="rounded-lg p-3 border text-customDarkGray border-gray-300 focus:border-gray-500 focus:outline-none"
+                                            />
+                                            <input
+                                                type="submit"
+                                                value="Submit"
+                                                className="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-900 cursor-pointer"
+                                            />
+                                        </form>
+
+                                    </div>
                                 </div>
                             </div>
                         </section>

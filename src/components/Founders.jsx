@@ -21,8 +21,8 @@ const Founders = () => {
                 </div>
                 <div className="lg:w-1/2 text-gray-800 flex flex-col p-5 lg:p-10 lg:py-5">
                     <div className='mb-8 lg:mb-10'>
-                        <h1 className='text-5xl lg:text-7xl font-bold'>ZOORA</h1>
-                        <div className='h-1 w-20 bg-emerald-600 mt-2'></div>
+                        <img src="/logo-horizontal-dark.png" alt="" />
+                        <div className='h-[5px]  bg-emerald-600'></div>
                     </div>
                     <section className='py-6 lg:px-6'>
                         <h1 className="text-3xl lg:text-4xl font-semibold capitalize bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-300 mb-2">Prashant S B</h1>
