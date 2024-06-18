@@ -14,23 +14,23 @@ const Homepage = ({ contactRef }) => {
     <div>
       <section id="upper" className="h-full">
         <div className="w-full p-1 flex flex-row justify-between">
-          <div>
-            <img src="/logo-horizontal-light.png" alt="Logo" height={250} width={250} />
+          <div className="hidden lg:block">
+            <img src="/logo-horizontal-light.png" alt="Logo" height={300} width={300} />
           </div>
-          <div className="flex flex-row gap-2 justify-center items-center">
+          <div className="hidden lg:flex flex-row gap-1 justify-center items-center">
             <button
-              className="bg-gray-50 text-gray-900 px-2 rounded-lg font-semibold flex flex-row gap-2 justify-center items-center"
+              className="bg-gray-50 z-30 text-gray-900 px-2 rounded-lg font-semibold flex flex-row gap-0 justify-center items-center"
               onClick={() => handleScroll(contactRef)}
             >
               <div>
                 <img src="/Message_light.svg" alt="Contact us" className="bg-black invert py-2 px-2" />
               </div>
-              <span >Contact</span>
+              <span>Contact</span>
             </button>
             {/* Call the BackgroundAudio component here */}
-            
           </div>
         </div>
+
         <section id="hero">
           <Herosections />
         </section>

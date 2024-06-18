@@ -5,18 +5,19 @@ const Founders = () => {
         <div className="p-5">
             <div className="px-4 lg:px-12 text-center flex flex-col justify-center">
                 <div className='pb-10 lg:pb-20'>
-                    <h1 className="text-4xl lg:text-5xl font-normal bg-gradient-to-r bg-clip-text text-transparent lg:leading-relaxed">
-                        Behind the
-                        <span className="bg-gradient-to-r from-orange-400/20 to-orange-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-2 border-orange-700 rounded-none focus:outline-none ml-3">Innovation: </span>
+                    
+                    <h1 className="text-3xl lg:text-5xl leading-relaxed font-normal bg-gradient-custom bg-clip-text text-transparent lg:leading-relaxed">
+                        Behind
+                        <span className="bg-gradient-to-r from-sky-400/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4 border-sky-700 rounded-none focus:outline-none ml-3">Innovation: </span>
                         Meet Our
-                        <span className="bg-gradient-to-r from-green-500/20 to-green-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-2 border-green-700 rounded-none focus:outline-none ml-3">Founder </span>
+                        <span className="bg-gradient-to-r from-purple-500/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4 border-purple-700 rounded-none focus:outline-none ml-3">Founder</span>
                     </h1>
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row bg-gray-200 rounded-lg items-center">
                 <div className="lg:w-1/2 p-10">
                     <div className="aspect-w-3 aspect-h-4 relative">
-                        <img src="./p5.png" alt="" className="object-cover rounded-lg shadow-lg" />
+                        <img src="./founder.jpg" alt="" className="object-cover rounded-lg shadow-lg" />
                     </div>
                 </div>
                 <div className="lg:w-1/2 text-gray-800 flex flex-col p-5 lg:p-10 lg:py-5">

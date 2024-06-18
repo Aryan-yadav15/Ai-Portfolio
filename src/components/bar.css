@@ -9,7 +9,7 @@
   /* Adjust bar color */
   transition: height 0.2s ease-in-out;
   /* Smooth height transition */
-  filter: blur(2.5px);
+  filter: blur(1.5px);
   /* Add blur effect */
 
 }

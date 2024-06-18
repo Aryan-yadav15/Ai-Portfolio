@@ -110,7 +110,7 @@ const AboutPage = () => {
                                 </div>
                                 <div className="text-gray-800 flex-2 flex flex-col px-5 py-5 lg:px-10 lg:py-5">
                                     <section>
-                                        <div className="w-28 lg:w-80">
+                                        <div className="w-64 lg:w-80">
                                             <img src="/logo-horizontal-dark.png" alt="" width={600}/>
                                         </div>
                                     </section>

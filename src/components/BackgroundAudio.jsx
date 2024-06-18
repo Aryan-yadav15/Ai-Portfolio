@@ -23,9 +23,9 @@ const BackgroundAudioPlayer = () => {
       </audio>
       <button className='z-10' onClick={handlePlayPause}>
         {isPlaying ?
-          <img className='hover:shadow-sm hover:w-[120px] opacity-60 transition-all' src="/micOpen.png" alt="Mic Open" width={100} />
+          <img className='hover:shadow-sm hover:w-[120px] opacity-100 transition-all' src="/mic.png" alt="Mic Open" width={150} />
           :
-          <img className='hover:shadow-sm hover:w-[120px] opacity-60 transition-all' src="/micClose.png" alt="Mic Closed" width={100} />
+          <img className='hover:shadow-sm hover:w-[120px] opacity-100 transition-all' src="/micClose.png" alt="Mic Closed" width={150} />
         }
       </button>
     </div>
