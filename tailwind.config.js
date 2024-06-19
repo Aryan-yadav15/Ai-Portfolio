@@ -17,6 +17,7 @@ export default {
 
       'xlg': '1440px',
       // => @media (min-width: 1280px) { ... }
+      '2xlg': '1920px',
     },
     extend: {
       backgroundImage: {
