@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { HeroScrollDemo } from '../../test'
 import Equalizer from '../Equalizer'
 import BackgroundAudioPlayer from '../BackgroundAudio'
 import "./PreLoader.css"
 import { motion } from 'framer-motion'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import FormModal from './TryBeatModal';
 
 const Herosections = () => {
+
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const handleTryBetaClick = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalVisible(false);
+  };
+
   return (
     <>
       <div className=''>
@@ -37,13 +51,20 @@ const Herosections = () => {
                 </div>
               </div>
               <div className="md:pt-8 mt-10 sm:mt-[-10px] text-lg font-light flex flex-col sm:flex-row gap-4 sm:gap-10 justify-center items-center md:mt-4 ">
-                <button className="z-10 bg-gradient-to-r border-l-4 border-r-4 border-pink-400 border-opacity-40 from-pink-500/5 to-pink-500/20 text-white hover:font-semibold hover:text-2xl transition-all font-normal py-2 px-6 sm:px-10 md:py-3 md:px-12 lg:py-4 lg:px-16 rounded-lg  focus:outline-none ">
+                <button
+                  className="z-10 bg-gradient-to-r border-l-4 border-r-4 border-pink-400 border-opacity-40 from-pink-500/5 to-pink-500/20 text-white hover:font-semibold hover:text-2xl transition-all font-normal py-2 px-6 sm:px-10 md:py-3 md:px-12 lg:py-4 lg:px-16 rounded-lg focus:outline-none"
+                  onClick={handleTryBetaClick}
+                >
                   Try Beta
                 </button>
                 <BackgroundAudioPlayer />
-                <button className="z-10 bg-gradient-to-l border-l-4 border-r-4 border-pink-400 border-opacity-40 from-pink-500/5 to-pink-500/20 text-white hover:font-semibold hover:text-2xl transition-all font-normal py-2 px-6 sm:px-10 md:py-3 md:px-12 lg:py-4 lg:px-16 rounded-lg  focus:outline-none ">
+                <button
+                  className="z-10 bg-gradient-to-l border-l-4 border-r-4 border-pink-400 border-opacity-40 from-pink-500/5 to-pink-500/20 text-white hover:font-semibold hover:text-2xl transition-all font-normal py-2 px-6 sm:px-10 md:py-3 md:px-12 lg:py-4 lg:px-16 rounded-lg focus:outline-none"
+                >
                   Product
                 </button>
+                {isModalVisible && <FormModal onClose={handleCloseModal} />}
+                <ToastContainer position="bottom-right" />
               </div>
             </div>
           </div>

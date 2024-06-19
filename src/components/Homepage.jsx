@@ -25,7 +25,7 @@ const Homepage = ({ contactRef }) => {
               <div>
                 <img src="/Message_light.svg" alt="Contact us" className="bg-black invert py-2 px-2" />
               </div>
-              <span>Contact</span>
+              <span className='pr-2'>Contact</span>
             </button>
             {/* Call the BackgroundAudio component here */}
           </div>
