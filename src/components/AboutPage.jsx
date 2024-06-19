@@ -110,9 +110,8 @@ const AboutPage = () => {
                                 </div>
                                 <div className="text-gray-800 flex-2 flex flex-col px-5 py-5 lg:px-10 lg:py-5">
                                     <section>
-                                        <div className="w-28 lg:w-48">
-                                            <h1 className="text-4xl font-Montserrat font-bold lg:text-5xl xl:text-7xl">ZOORA</h1>
-                                            <div className="h-1 bg-emerald-600 mt-1"></div>
+                                        <div className="w-64 lg:w-80">
+                                            <img src="/logo-horizontal-dark.png" alt="" width={600}/>
                                         </div>
                                     </section>
                                     <section className="py-6 flex flex-col gap-3 lg:w-[600px]">

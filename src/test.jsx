@@ -1,6 +1,7 @@
 import React from "react";
 import { ContainerScroll } from "./components/ui/3dCard.jsx";
 import Equalizer from "./components/Equalizer.jsx";
+import BackgroundAudioPlayer from "./components/BackgroundAudio.jsx";
 
 export function HeroScrollDemo() {
   return (
@@ -28,6 +29,7 @@ export function HeroScrollDemo() {
               <button className="bg-white text-gray-800 font-normal py-2 px-6 sm:px-10 rounded-md hover:bg-gray-100 focus:outline-none">
                 Get This
               </button>
+              <BackgroundAudioPlayer/>
               <button className="border-[1px] bg-transparent text-white font-normal py-2 px-6 sm:px-10 rounded-md hover:bg-gray-100 focus:outline-none">
                 Try Beta
               </button>

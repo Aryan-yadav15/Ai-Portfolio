@@ -73,7 +73,7 @@ const Equalizer = () => {
   }, [numBars]);
 
   return (
-    <div className="h-screen w-[90vw] absolute z-0 md:mt-[-100px] lg:mt-0 overflow-hidden">
+    <div className="h-[90vh] w-[90vw] md:opacity-80 xlg:opacity-100 absolute items-center justify-center z-0  md:mt-20 lg:mt-[10vh]  overflow-hidden">
       <div className="equalizer-container">
         <div className="glow-background"></div>
         <div className="equalizer">

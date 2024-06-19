@@ -18,11 +18,11 @@ const SolutionPage = () => {
         <div className='flex flex-col gap-14 p-4 lg:p-12'>
             <div className="text-center flex justify-center">
                 <div className='w-full lg:w-[80%]'>
-                    <h1 className="text-3xl lg:text-5xl font-normal bg-gradient-custom bg-clip-text text-transparent lg:leading-relaxed">
+                    <h1 className="text-3xl lg:text-5xl font-normal bg-gradient-custom bg-clip-text text-transparent leading-relaxed lg:leading-relaxed">
 
                         <span className="bg-gradient-to-r from-purple-500/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4 border-purple-700 rounded-none focus:outline-none ml-3"> ZORA and ZOSS</span>
-                        together create a seamless
-                        <span className="bg-gradient-to-r from-orange-500/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4 border-orange-700 rounded-none focus:outline-none ml-3">intelligent ecosystem </span>
+                        together creates seamless
+                        <span className="bg-gradient-to-r from-orange-500/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4 border-orange-700 rounded-none focus:outline-none ml-3">Intelligent ecosystem </span>
                     </h1>
                 </div>
             </div>
@@ -112,6 +112,7 @@ const SolutionPage = () => {
                 </div>
                 </motion.div>
         </div>
+
 
     )
 }
