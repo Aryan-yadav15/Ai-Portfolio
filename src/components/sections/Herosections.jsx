@@ -23,7 +23,7 @@ const Herosections = () => {
   return (
     <>
       <div className=''>
-        <div className=" w-full mt-0 sm:mt-24 md:mt-20  lg:mt-0 xlg:mt-[20px] mb-20 flex flex-col justify-center items-center gap-5 relative h-[90vh]">
+        <div className=" w-full mt-0 sm:mt-24 md:mt-20  lg:mt-0 xlg:mt-[1rem] mb-20 flex flex-col justify-center items-center gap-5 relative h-[calc(100vh_-_20px)]">
           <div className="flex flex-col items-center relative">
             <motion.div
               initial={{ opacity: 0, y: 0 }}
@@ -33,22 +33,20 @@ const Herosections = () => {
             >
               <Equalizer />
             </motion.div>
-            <div className="flex flex-col gap-40 sm:gap-28 md:gap-28 lg:gap-10 xlg:gap-72">
+            <div className="flex flex-col gap-40 sm:gap-28 md:gap-28 lg:gap-10 xlg:gap-48 2xlg:gap-72">
               <div className='pt-10 lg:pt-0 xlg:pt-10'>
-                <div className="px-4 lg:px-12 text-center">
-                  <h1 className="text-4xl md:text-6xl lg:text-6xl lg:p-10 xlg:p-8 md:leading-normal xlg:leading-normal xlg:text-7xl font-regular bg-gradient-custom bg-clip-text text-transparent leading-normal sm:leading-relaxed lg:leading-normal ">
+                <div className="px-4 lg:px-12 xlg:px-28 text-center">
+                  <h1 className="text-4xl md:text-6xl  lg:p-10 xlg:p-8 md:leading-normal xlg:leading-normal xlg:text-7xl font-regular bg-gradient-custom bg-clip-text text-transparent leading-normal sm:leading-relaxed lg:leading-normal ">
                     <span className="animate-slide bg-gradient-to-r from-purple-500/20 to-purple-500/2 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4 border-purple-700 rounded-none focus:outline-none ml-3">
                       Revolutionizing
                     </span>{" "}
-                    Your Digital Life{" "}
+                    Your Digital Life{" "} 
                     <span className="bg-gradient-to-r animate-slide from-orange-500/20 to-purple-500/5 hover:bg-gradient-to-r text-white px-2 py-1 border-l-4 border-orange-700 rounded-none focus:outline-none ml-3">
                       With AI
                     </span>
                   </h1>
                 </div>
-                <div className="text-base sm:text-lg md:text-xl  text-gray-300 text-center lg:mt-[-20px] xlg:mt-4 z-10">
-                  <p className=' relative z-10'>Generate website copy quickly and easily using AI, all without leaving Figma</p>
-                </div>
+                
               </div>
               <div className="md:pt-8 mt-10 sm:mt-[-10px] text-lg font-light flex flex-col sm:flex-row gap-4 sm:gap-10 justify-center items-center md:mt-4 ">
                 <button
